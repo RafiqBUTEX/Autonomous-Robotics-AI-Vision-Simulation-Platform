@@ -17,6 +17,10 @@ This project investigates the full perception-to-autonomy pipeline for a simulat
 
 A pretrained YOLOv8n model, evaluated on the simulation's plain synthetic objects, consistently misclassified them (for example a cone identified as "stop sign", confidence under 0.4). To address this, an automated labeling pipeline was built: using each object's known world-frame position, the vehicle's live odometry, and camera intrinsics, 2D bounding boxes were computed and projected without any manual annotation. A YOLOv8 model fine-tuned on this dataset reached an mAP50 of 0.845 (cone 0.995, can 0.995, cube 0.546), correctly classifying objects the pretrained model could not.
 
+## Aechitecture Diagram
+![System architecture](docs/architecture.png)
+
+
 ## Repository structure
 
 urdf/ - vehicle description
