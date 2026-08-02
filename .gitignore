@@ -16,3 +16,11 @@ __pycache__/
 packages.microsoft.gpg
 *.cache
 .vscode/
+
+# Unity
+unity/RoboCarDetection/Library/
+unity/RoboCarDetection/Logs/
+unity/RoboCarDetection/obj/
+unity/RoboCarDetection/Temp/
+unity/RoboCarDetection/UserSettings/
+*.meta.bak
