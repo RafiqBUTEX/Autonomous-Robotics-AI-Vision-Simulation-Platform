@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rafiq/car_robot_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages",
+        "/home/rafiq/car_robot_ws/install/car_perception/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/rafiq/car_robot_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages",
+        "/home/rafiq/car_robot_ws/install/car_perception/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
