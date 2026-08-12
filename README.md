@@ -32,7 +32,7 @@ The complete simulation is mirrored in a Unity-based digital twin dashboard with
 
 
 ## Aechitecture Diagram
-![System architecture](docs/architecture.png)
+![System architecture](architecture_diagram.png)
 
 # Results
 
