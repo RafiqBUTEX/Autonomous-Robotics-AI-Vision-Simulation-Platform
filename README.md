@@ -178,77 +178,33 @@ Building and tree collision geometry was manually created and approximately defi
 This is sufficient for the current simulation experiments but may limit physical realism.
 
 ---
- #Dataset 
-                       
-dataset/
-├── data.yaml
-├── images/
-│   ├── frame_000010.jpg
-│   ├── frame_000020.jpg
-│   ├── ...
-│   └── 106 source images
-└── labels/
-    ├── frame_000010.txt
-    ├── frame_000020.txt
-    ├── ...
-    └── YOLO-format annotations
+## Technology Stack
 
-#Repository Structure
-Autonomous-Robotics-AI-Vision-Simulation-Platform/
-│
-├── urdf/
-│   └── car.urdf
-│       └── Custom vehicle description:
-│           chassis, wheels, differential drive,
-│           cameras, RGB-D sensor and LiDAR
-│
-├── worlds/
-│   └── road_world.world
-│       └── Custom Gazebo environment:
-│           road, lane markings, buildings,
-│           trees and detection objects
-│
+ROS2 Humble · Gazebo Classic · RViz · Nav2 · slam_toolbox · YOLOv8 · OpenCV · PyTorch · Gymnasium · Stable-Baselines3 · PPO · Unity 2022 LTS · ML-Agents · C# · Python · URDF
+
+
+## Repository Structure
+
+```text
+crr_ws/
+├── config/
+├── dataset/
+│   ├── images/
+│   ├── labels/
+│   └── data.yaml
 ├── src/
 │   └── car_perception/
-│       └── ROS2 perception package:
-│           object detection
-│           distance estimation
-│           3D localization
-│           dataset generation
-│           reinforcement-learning environment
-│
-├── config/
-│   ├── mapper_params_online_async.yaml
-│   └── nav2_params.yaml
-│
-├── dataset/
-│   ├── data.yaml
-│   ├── images/
-│   │   └── 106 source images
-│   └── labels/
-│       └── YOLO-format annotations
-│
+│       └── car_perception/
+│           └── rl_env.py
+├── urdf/
+├── worlds/
+│   └── road_world.world
 ├── custom_models/
-│   └── Gazebo model assets:
-│       cone, can and cube
-│
 ├── custom_yolo.pt
-│   └── Fine-tuned YOLOv8 model
-│
+├── train_rl.py
+├── run_rl.py
 ├── rl_lidar_avoidance.zip
-│   └── Trained PPO policy for
-│       LiDAR-based obstacle avoidance
-│
-├── unity/
-│   └── RoboCarDetection/
-│       └── Unity digital twin:
-│           detection dashboard
-│           camera feeds
-│           vehicle control
-│           synchronized vehicle pose
-│           ROS-TCP integration
-│
-└── docs/
-    └── architecture.png
-        └── System architecture diagram
+└── unity/
+    └── RoboCarDetection/
+
 
