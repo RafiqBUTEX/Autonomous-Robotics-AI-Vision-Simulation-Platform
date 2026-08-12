@@ -4,10 +4,10 @@ log/
 runs/
 training_runs/
 sample_frames/
-dataset/images/
+!dataset/images/
+!dataset/images/*.jpg
 dataset/train/images/
 dataset/val/images/
-*.jpg
 gazebo_models.zip
 gazebo_log.txt
 train_log.txt
