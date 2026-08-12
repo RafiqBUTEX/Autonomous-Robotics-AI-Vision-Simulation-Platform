@@ -10,6 +10,10 @@
       <uri>model://ground_plane</uri>
     </include>
 
+<plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <ros><namespace>/gazebo</namespace></ros>
+    </plugin>
+
 <model name="road">
       <static>true</static>
       <link name="road_link">
@@ -142,6 +146,9 @@
           <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
           <material><ambient>0.4 0.25 0.1 1</ambient><diffuse>0.4 0.25 0.1 1</diffuse></material>
         </visual>
+        <collision name="trunk_collision">
+          <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
+        </collision>
         <pose>0 0 0.75 0 0 0</pose>
       </link>
       <link name="leaves">
@@ -161,6 +168,9 @@
           <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
           <material><ambient>0.4 0.25 0.1 1</ambient><diffuse>0.4 0.25 0.1 1</diffuse></material>
         </visual>
+        <collision name="trunk_collision">
+          <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
+        </collision>
         <pose>0 0 0.75 0 0 0</pose>
       </link>
       <link name="leaves">
@@ -180,6 +190,9 @@
           <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
           <material><ambient>0.4 0.25 0.1 1</ambient><diffuse>0.4 0.25 0.1 1</diffuse></material>
         </visual>
+        <collision name="trunk_collision">
+          <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
+        </collision>
         <pose>0 0 0.75 0 0 0</pose>
       </link>
       <link name="leaves">
@@ -199,6 +212,9 @@
           <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
           <material><ambient>0.4 0.25 0.1 1</ambient><diffuse>0.4 0.25 0.1 1</diffuse></material>
         </visual>
+        <collision name="trunk_collision">
+          <geometry><cylinder><radius>0.15</radius><length>1.5</length></cylinder></geometry>
+        </collision>
         <pose>0 0 0.75 0 0 0</pose>
       </link>
       <link name="leaves">

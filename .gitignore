@@ -24,3 +24,4 @@ unity/RoboCarDetection/obj/
 unity/RoboCarDetection/Temp/
 unity/RoboCarDetection/UserSettings/
 *.meta.bak
+rl_logs/
