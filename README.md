@@ -3,7 +3,7 @@
 ### ROS2 · Gazebo · YOLOv8 · SLAM · Nav2 · Unity 3D · Reinforcement Learning
 
 **Author:** Md. Rafiqul Islam | Bangladesh University of Textiles (BUTEX)  
-**Period:** July 2026 – Present
+**Period:** June 2026 – Present
 
 ---
 
